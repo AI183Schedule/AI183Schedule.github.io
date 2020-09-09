@@ -60,7 +60,7 @@ a{
 }
 
 .content{
-    min-height: 100vh;
+    min-height: calc(100vh + 2em);
     background: url("img/back2.jpg") fixed no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -146,7 +146,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 .list li{
@@ -162,5 +162,25 @@ a{
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 550px){
+    .nav{
+        margin-left: 1em;
+        margin-bottom: 3em;
+        width: 60%;
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0.5em 0.2em 2em 0.2em;
+        border-bottom: 2px solid #3B3601;
+    }
+
+    .bells{
+        margin-top: 0;
+        font-size: 2.5em;
     }
 }
